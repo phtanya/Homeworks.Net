@@ -13,7 +13,8 @@ namespace HW_4_3_CodeFirst.Models
         public string Name { get; set; }
         public decimal Budget { get; set; }
         public DateTime StartedDate { get; set; }
+        public int ClientId { get; set; }
+        public Client Client { get; set; }
         public EmployeeProject EmployeeProject { get; set; }
-
     }
 }

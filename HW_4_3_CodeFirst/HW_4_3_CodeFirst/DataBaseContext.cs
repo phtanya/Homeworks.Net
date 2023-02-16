@@ -17,6 +17,7 @@ namespace HW_4_3_CodeFirst
         public DbSet<Office> Office { get; set; }
         public DbSet<Project> Project { get; set; }
         public DbSet<Title> Title { get; set; }
+        public DbSet<Client> Client { get; set; }
 
         private string _connectionString;
 
@@ -38,6 +39,7 @@ namespace HW_4_3_CodeFirst
             modelBuilder.ApplyConfiguration(new OfficeConfiguration());
             modelBuilder.ApplyConfiguration(new ProjectConfiguration());
             modelBuilder.ApplyConfiguration(new TitleConfiguration());
+            modelBuilder.ApplyConfiguration(new ClientConfiguration());
         }
     }
 }
