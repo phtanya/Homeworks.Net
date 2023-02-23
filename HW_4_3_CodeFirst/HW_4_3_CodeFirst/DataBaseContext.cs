@@ -30,7 +30,8 @@ namespace HW_4_3_CodeFirst
         {
             IConfigurationBuilder configBuilder = new ConfigurationBuilder().AddJsonFile("appsettings.json");
             IConfigurationRoot configuration = configBuilder.Build();
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("DataBase"));
+            optionsBuilder.UseSqlServer(configuration.GetConnectionString("DataBase")).UseLazyLoadingProxies();
+
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -13,6 +13,6 @@ namespace HW_4_3_CodeFirst.Models
         public string Location { get; set; }
         public DateTime FoundedDate { get; set; }
         public string Email { get; set; }
-        public List<Project> Project { get; set; } = new List<Project>();
+        public virtual List<Project> Project { get; set; } = new List<Project>();
     }
 }
