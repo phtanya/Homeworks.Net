@@ -15,7 +15,7 @@ namespace HW_4_3_CodeFirst
             using(var dbContext = new DataBaseContext())
             {
                 // 1. Запрос, который объединяет 3 таблицы и обязательно включает LEFT JOIN
-                var employee = from emp in dbContext.Employee
+                var employee = (from emp in dbContext.Employee
                                join office in dbContext.Office
                                on emp.OfficeId equals office.OfficeId into temp
                                from result in temp.DefaultIfEmpty()
@@ -28,14 +28,14 @@ namespace HW_4_3_CodeFirst
                                    emp.EmployeeId,
                                    result.OfficeId,
                                    result2.Rate
-                               };
+                               }).ToList();
 
                 // 2. Запрос, который возвращает разницу между HiredDate и сегодня в днях. Фильтрация должна быть выполнена на сервере.
-                var differenceOfDate = dbContext.Employee.AsNoTracking().Select(i => new
+                var differenceOfDate = (dbContext.Employee.AsNoTracking().Select(i => new
                 {
                     id = i.EmployeeId,
                     diff = EF.Functions.DateDiffDay(i.HiredDate, DateTime.Now)
-                });
+                })).ToList();
 
                 //    3.Запрос, который обновляет 2 сущности.Сделать в одной транзакции
 
@@ -94,10 +94,10 @@ namespace HW_4_3_CodeFirst
 
                 //    6.Запрос, который группирует сотрудников по ролям и возвращает название роли(Title) если оно не содержит ‘a’
 
-                var title = from emp in dbContext.Employee.AsNoTracking()
+                var title = (from emp in dbContext.Employee.AsNoTracking()
                              where (!emp.Title.Name.Contains("a"))
                              group emp by emp.Title.Name into e
-                             select new { e.Key, count = e.Count() };
+                             select new { e.Key, count = e.Count()}).ToList();
 
             }
         }
