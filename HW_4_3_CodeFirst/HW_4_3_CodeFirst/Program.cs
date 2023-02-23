@@ -1,4 +1,5 @@
-﻿using Castle.Components.DictionaryAdapter;
+
+using Castle.Components.DictionaryAdapter;
 using HW_4_3_CodeFirst.Models;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
