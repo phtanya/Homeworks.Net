@@ -1,0 +1,27 @@
+body {
+  margin: 20px;
+}
+header {
+  padding: 10px;
+  text-align: center;
+  background: #6595BF;
+  color: white;
+  font-size: 25px;
+}
+body {
+  background: #D9D9DC;
+  color: #333;
+  position: relative;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #233A59;
+  color: white;
+  font-size: 15px;
+}
+li:last-child {
+  color: #cd1625;
+}
+
+          
