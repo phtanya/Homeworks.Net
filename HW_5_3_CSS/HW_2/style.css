@@ -1,0 +1,19 @@
+div{
+    width: 700px;
+}
+p{
+    text-align: justify;
+}
+img{
+    height: 168px;
+    width: 300px;
+}
+#foto-html{
+
+    float: left;
+    margin: 0 15px 15px 0;
+}
+#foto-css{
+    float: right;
+    margin: 15px 0 15px 15px;
+}
