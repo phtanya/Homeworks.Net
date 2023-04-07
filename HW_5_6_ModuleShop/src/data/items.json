@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "CONVERSE",
+        "price": 75.00,
+        "imgUrl": "https://allshoes.com.ua/files/products/112132.1200x1200.jpg",
+        "info": "The Converse Chuck Taylor All Star is the one that started it all for Converse. When it comes to sneakers, there’s nothing more pure than a canvas upper and a vulcanized rubber sole. This is the sneaker that spawned countless imitators, with its star-centered patch, rubber toe cap, toe bumper and striping."
+    },
+    {
+        "id": 2,
+        "name": "Adidas Yeezy Boost",
+        "price": 125.5,
+        "imgUrl": "https://allshoes.com.ua/files/products/14176449_43313431_2048.1200x1200.jpg",
+        "info": "The adidas Yeezy Boost 700 V2 “Muave” is a neutral colorway of the second variation of Kanye West’s popular “dad shoe” that was released in September 2021. Previously appearing on the adidas Yeezy Boost 700 in 2018, the “Muave” look returns to the adidas Yeezy line on the always-in-style Yeezy Boost 700 V2, albeit this time with a more monotone appearance than its predecessor. "
+    },
+    {
+        "id": 3,
+        "name": "Nike Air Force",
+        "price": 55,
+        "imgUrl": "https://allshoes.com.ua/files/products/11-4.1200x1200.1200x1200.jpg",
+        "info": "The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine."
+    }
+]

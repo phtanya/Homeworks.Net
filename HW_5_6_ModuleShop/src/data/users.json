@@ -1,0 +1,15 @@
+
+[
+    {
+      "login": "ex1@gmail.com",
+      "password": "000000"
+    },
+    {
+      "login": "ex2@gmail.com",
+      "password": "1111"
+    },
+    {
+        "login": "ex3@gmail.com",
+        "password": "2222"
+    }
+  ]
